@@ -5,6 +5,10 @@
         box-sizing: border-box;
     }
 
+    main {
+        padding: 15px 4.0625rem;
+    }
+
     h2 {
         font-family: Roboto, sans-serif;
         font-weight: 700;
@@ -50,13 +54,35 @@
         max-width: 100px;
     }
 
+    .agenda-item {
+        display: block;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .agenda-item.blue {
+        background: #63CEC1;
+    }
+
+    .agenda-item.purple {
+        background: #CDABCD;
+    }
+
+    .agenda-item.green {
+        background: #C6EC25;
+    }
+
+    .agenda-item.red {
+        background: #C6EC25;
+    }
+
     .flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .title-wrap {
+    .item-title {
         display: flex;
         align-items: center;
     }
@@ -85,7 +111,7 @@
                 <h3 class="section-title">February 15, 2023</h3>
             </div>
 
-            <div id='item-1'>
+            <div id='item-1' class="agenda-item blue">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Networking &amp; Coffee</h4>
                     <h4>8:00 AM-8:50 AM</h4>
@@ -93,7 +119,7 @@
                 <p>Four Square Ballroom &amp; Patio</p>
             </div>
 
-            <div id='item-2'>
+            <div id='item-2' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Opening Keynote: Incident Management in 2023</h4>
                     <h4>9:00 AM-9:35 AM</h4>
@@ -112,7 +138,7 @@
                 </div>
             </div>
 
-            <div id='item-3'>
+            <div id='item-3' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Opening Keynote: Debugging Is A Team Sport</h4>
                     <h4>9:35 AM-10:00 AM</h4>
@@ -134,7 +160,7 @@
                 </div>
             </div>
 
-            <div id='item-4'>
+            <div id='item-4' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Resiliency in Regulated Industries</h4>
                     <h4>10:10 AM-10:35 AM</h4>
@@ -161,7 +187,7 @@
                 </div>
             </div>
 
-            <div id='item-5'>
+            <div id='item-5' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Warning: Principal Engineer under the influence of Learning from Incidents</h4>
                     <h4>10:10 AM-10:35 AM</h4>
@@ -182,7 +208,7 @@
                 </div>
             </div>
 
-            <div id='item-6'>
+            <div id='item-6' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Advanced Incidents and Dragons: Disaster Roleplaying Is For Everyone</h4>
                     <h4>10:10 AM-10:35 AM</h4>
@@ -205,7 +231,7 @@
                 </div>
             </div>
 
-            <div id='item-7'>
+            <div id='item-7' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>The role of monitoring in proactive safety and performance management</h4>
                     <h4>10:45 AM-11:10 AM</h4>
@@ -226,7 +252,7 @@
                 </div>
             </div>
 
-            <div id='item-8'>
+            <div id='item-8' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>How we're transforming the practice of learning from incidents in a 12,000 person organization</h4>
                     <h4>10:45 AM-11:10 AM</h4>
@@ -257,7 +283,7 @@
                 </div>
             </div>
 
-            <div id='item-9'>
+            <div id='item-9' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>To err is human, To Git rebase --force</h4>
                     <h4>10:45 AM-11:10 AM</h4>
@@ -278,7 +304,7 @@
                 </div>
             </div>
 
-            <div id='item-10'>
+            <div id='item-10' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Captain Foresight: Using pre-mortems to prepare for incidents before they occur</h4>
                     <h4>11:20 AM-11:45 AM</h4>
@@ -300,7 +326,7 @@
                 </div>
             </div>
 
-            <div id='item-11'>
+            <div id='item-11' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Stories: Learning About What You Can Learn From Outliers</h4>
                     <h4>11:20 AM-11:45 AM</h4>
@@ -320,7 +346,7 @@
                 </div>
             </div>
 
-            <div id='item-12'>
+            <div id='item-12' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Stories: What Didn't Make The Headlines</h4>
                     <h4>11:20 AM-11:45 AM</h4>
@@ -340,7 +366,7 @@
                 </div>
             </div>
 
-            <div id='item-13'>
+            <div id='item-13' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Implementing DevOps &amp; SRE through Incidents</h4>
                     <h4>11:20 AM-11:45 AM</h4>
@@ -363,7 +389,7 @@
                 </div>
             </div>
 
-            <div id='item-14'>
+            <div id='item-14' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Handover Communications in Software Operations: Findings from the Field</h4>
                     <h4>11:55 AM-12:10 PM</h4>
@@ -385,7 +411,7 @@
                 </div>
             </div>
 
-            <div id='item-15'>
+            <div id='item-15' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Stories: There's No Place Like Production</h4>
                     <h4>11:55 AM-12:10 PM</h4>
@@ -407,7 +433,7 @@
                 </div>
             </div>
 
-            <div id='item-16'>
+            <div id='item-16' class="agenda-item blue">
                 <div class='flex'>
                     <h4>Lunch</h4>
                     <h4>12:10 PM-1:30 PM</h4>
@@ -415,7 +441,7 @@
                 <p>Four Square Ballroom &amp; Patio</p>
             </div>
             
-            <div id='item-17'>
+            <div id='item-17' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Finding Patterns in What Makes Incident Response Hard Work</h4>
                     <h4>1:30 PM-2:15 PM</h4>
@@ -427,7 +453,7 @@
                 </div>
             </div>
 
-            <div id='item-18'>
+            <div id='item-18' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incidents at Google Scale</h4>
                     <h4>2:25 PM-3:05 PM</h4>
@@ -446,7 +472,7 @@
                 </div>
             </div>
 
-            <div id='item-19'>
+            <div id='item-19' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Embracing the Multi-Party Dilemma: Learning from Incidents Across Company Boundaries</h4>
                     <h4>2:25 PM-3:05 PM</h4>
@@ -476,7 +502,7 @@
                 </div>
             </div>
 
-            <div id='item-20'>
+            <div id='item-20' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Stories: A Tale of Two Incidents</h4>
                     <h4>2:25 PM-2:40 PM</h4>
@@ -496,7 +522,7 @@
                 </div>
             </div>
 
-            <div id='item-21'>
+            <div id='item-21' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Stories: How We Lost an Entire Data Center Without Anyone Noticing</h4>
                     <h4>2:45 PM-3:05 PM</h4>
@@ -516,7 +542,7 @@
                 </div>
             </div>
 
-            <div id='item-22'>
+            <div id='item-22' class="agenda-item blue">
                 <div class='flex'>
                     <h4>Afternoon Coffee Break</h4>
                     <h4>3:05 PM-3:30 PM</h4>
@@ -524,7 +550,7 @@
                 <p>Four Square Ballroom &amp; Patio</p>
             </div>
 
-            <div id='item-23'>
+            <div id='item-23' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Why You Need To Be Using a Chat Bot For Your Incident Response</h4>
                     <h4>3:30 PM-3:45 PM</h4>
@@ -542,7 +568,7 @@
                 </div>
             </div>
 
-            <div id='item-24'>
+            <div id='item-24' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>If I Can Do It On An Ambulance, You Can Do It In An Office: Scalable Incident Response Using ICS</h4>
                     <h4>3:30 PM-3:45 PM</h4>
@@ -565,7 +591,7 @@
                 </div>
             </div>
 
-            <div id='item-25'>
+            <div id='item-25' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Managing incidents when your app is built on other apps</h4>
                     <h4>3:30 PM-3:45 PM</h4>
@@ -584,7 +610,7 @@
                 </div>
             </div>
 
-            <div id='item-26'>
+            <div id='item-26' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Implementing a Learning Team</h4>
                     <h4>3:55 PM-4:10 PM</h4>
@@ -604,7 +630,7 @@
                 </div>
             </div>
 
-            <div id='item-27'>
+            <div id='item-27' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Post-Template Incident Response</h4>
                     <h4>3:55 PM-4:10 PM</h4>
@@ -623,7 +649,7 @@
                 </div>
             </div>
 
-            <div id='item-28'>
+            <div id='item-28' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Would Aikido Help with a Hijacked Retro?</h4>
                     <h4>3:55 PM-4:10 PM</h4>
@@ -655,7 +681,7 @@
                 </div>
             </div>
 
-            <div id='item-29'>
+            <div id='item-29' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Closing Keynote: "Your Understanding Of Reality Is Wrong"</h4>
                     <h4>4:20 PM-4:50 PM</h4>
@@ -675,7 +701,7 @@
                 </div>
             </div>
 
-            <div id='item-30'>
+            <div id='item-30' class="agenda-item blue">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Evening Social</h4>
                     <h4>5:00 PM-6:00 PM</h4>
@@ -701,7 +727,7 @@
                 <h3>February 16, 2023</h3>
             </div>
 
-            <div id='item-31'>
+            <div id='item-31' class="agenda-item blue">
                 <div class='flex'>
                     <h4>Networking & Coffee</h4>
                     <h4>8:00 AM-8:50 AM</h4>
@@ -709,7 +735,7 @@
                 <p>Four Square Ballroom &amp; Patio</p>
             </div>
 
-            <div id='item-32'>
+            <div id='item-32' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Opening Keynote: Systems Thinking Methods For Incident Analysis</h4>
                     <h4>9:00 AM-9:50 AM</h4>
@@ -729,7 +755,7 @@
                 </div>
             </div>
 
-            <div id='item-33'>
+            <div id='item-33' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Stripe's Recipe: Ingredients for a Heart-Healthy On-Call</h4>
                     <h4>10:00 AM-10:25 AM</h4>
@@ -749,7 +775,7 @@
                 </div>
             </div>
             
-            <div id='item-34'>
+            <div id='item-34' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Far From The Shallows: The Value of Deeper Incident Analysis</h4>
                     <h4>10:00 AM-10:25 AM</h4>
@@ -770,7 +796,7 @@
                 </div>
             </div>
 
-            <div id='item-35'>
+            <div id='item-35'  class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Panel: Learning From Incidents at Megacorporations</h4>
                     <h4>10:00 AM-10:25 AM</h4>
@@ -806,7 +832,7 @@
                 </div>
             </div>
 
-            <div id='item-36'>
+            <div id='item-36' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Designing Incident Analysis Programs Isn’t Just For Managers</h4>
                     <h4>10:35 AM-11:00 AM</h4>
@@ -825,7 +851,7 @@
                 </div>
             </div>
 
-            <div id='item-37'>
+            <div id='item-37' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>OREOS minus the milk: Deploying to the DoD in Staged Worlds Studies</h4>
                     <h4>10:35 AM-11:00 AM</h4>
@@ -845,7 +871,7 @@
                 </div>
             </div>
 
-            <div id='item-38'>
+            <div id='item-38' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Creating a Vibrant Culture Around a Library of Incident Write-ups</h4>
                     <h4>10:35 AM-11:00 AM</h4>
@@ -883,7 +909,7 @@
                 </div>
             </div>
 
-            <div id='item-39'>
+            <div id='item-39' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Response and Incident Analysis: Two Great Tastes that Taste Great Together</h4>
                     <h4>11:10 AM-11:35 AM</h4>
@@ -903,7 +929,7 @@
                 </div>
             </div>
 
-            <div id='item-40'>
+            <div id='item-40' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Archeology: Extracting Value from Paperwork and Narratives</h4>
                     <h4>11:10 AM-11:35 AM</h4>
@@ -923,7 +949,7 @@
                 </div>
             </div>
 
-            <div id='item-41'>
+            <div id='item-41' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Panel: Learning From Successes and Failures in Adoption of LFI</h4>
                     <h4>11:10 AM-11:35 AM</h4>
@@ -976,7 +1002,7 @@
                 </div>
             </div>
 
-            <div id='item-42'>
+            <div id='item-42' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>The Language of Learning</h4>
                     <h4>11:45 AM-12:10 PM</h4>
@@ -997,7 +1023,7 @@
                 </div>
             </div>
 
-            <div id='item-43'>
+            <div id='item-43' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Functional Resonance Analysis in Sociotechnical Systems</h4>
                     <h4>11:45 AM-12:10 PM</h4>
@@ -1019,7 +1045,7 @@
                 </div>
             </div>
 
-            <div id='item-44'>
+            <div id='item-44' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Stories: We Prepared For Your Taco Order And Broke Your Grocery Pickup.</h4>
                     <h4>11:45 AM-12:00 PM</h4>
@@ -1038,7 +1064,7 @@
                 </div>
             </div>
 
-            <div id='item-45'>
+            <div id='item-45' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Stories: When The CDN Stopped Serving Bytes: A Tale of Metastable Failure</h4>
                     <h4>12:00 PM-12:15 PM</h4>
@@ -1056,7 +1082,7 @@
                 </div>
             </div>
 
-            <div id='item-46'>
+            <div id='item-46' class="agenda-item blue">
                 <div class='flex'>
                     <h4>Lunch</h4>
                     <h4>12:10 PM-1:30 PM</h4>
@@ -1064,7 +1090,7 @@
                 <p>Four Square Ballroom &amp; Patio</p>
             </div>
 
-            <div id='item-47'>
+            <div id='item-47' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Moving Gracefully from Compliance to Learning, the Beginning of Forest Service's Learning Journey</h4>
                     <h4>1:30 PM-2:15 PM</h4>
@@ -1084,7 +1110,7 @@
                 </div>
             </div>
 
-            <div id='item-48'>
+            <div id='item-48' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>After The Dust Settles</h4>
                     <h4>2:25 PM-2:50 PM</h4>
@@ -1105,7 +1131,7 @@
                 </div>
             </div>
 
-            <div id='item-49'>
+            <div id='item-49' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>You Are The Resistance</h4>
                     <h4>2:25 PM-2:50 PM</h4>
@@ -1125,7 +1151,7 @@
                 </div>
             </div>
 
-            <div id='item-50'>
+            <div id='item-50' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Incident Stories: How I Learned to Stop Worrying and Love Incidents</h4>
                     <h4>2:25 PM-2:40 PM</h4>
@@ -1144,7 +1170,7 @@
                 </div>
             </div>
 
-            <div id='item-51'>
+            <div id='item-51' class="agenda-item blue">
                 <div class='flex'>
                     <h4>Afternoon Coffee Break</h4>
                     <h4>2:50 PM-3:20 PM</h4>
@@ -1152,7 +1178,7 @@
                 <p>Four Square Ballroom &amp; Patio</p>
             </div>
 
-            <div id='item-52'>
+            <div id='item-52' class="agenda-item green">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Beyond the Bot: Capturing Data to Gain Insights from Incidents</h4>
                     <h4>3:20 PM-3:45 PM</h4>
@@ -1180,7 +1206,7 @@
                 </div>
             </div>
 
-            <div id='item-53'>
+            <div id='item-53' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Who Owns Operations?</h4>
                     <h4>3:20 PM-3:45 PM</h4>
@@ -1199,7 +1225,7 @@
                 </div>
             </div>
 
-            <div id='item-54'>
+            <div id='item-54' class="agenda-item red">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Panel: Care Work at Work-- Resilience in Software</h4>
                     <h4>3:20 PM-3:45 PM</h4>
@@ -1221,7 +1247,7 @@
                 </div>
             </div>
 
-            <div id='item-55'>
+            <div id='item-55' class="agenda-item purple">
                 <div class='flex'>
                     <h4 class="item-title"><span class="icon"></span>Closing Keynote: An exemplar: What progress in LFI actually looks like</h4>
                     <h4>3:55 PM-4:40 PM</h4>
