@@ -220,6 +220,42 @@
         main {
             padding: 0;
         }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+
+        h5 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 14.4px;
+        }
+
+        li {
+            font-size: 14.4px;
+        }
+
+        .h3 {
+            font-size: 1.12rem;
+        }
+
+        .agenda-item > p, .agenda-item .flex p {
+            font-size: 1.12rem;
+        }
+
+        .item-title {
+            width: 70%;
+        }
     }
 </style>
 
@@ -301,6 +337,10 @@
             document.getElementById('content-21').classList.toggle('active');
             document.getElementById('item-21').classList.toggle('active');
         }
+        if (num === 22) {
+            document.getElementById('content-22').classList.toggle('active');
+            document.getElementById('item-22').classList.toggle('active');
+        }
         if (num === 23) {
             document.getElementById('content-23').classList.toggle('active');
             document.getElementById('item-23').classList.toggle('active');
@@ -332,6 +372,10 @@
         if (num === 30) {
             document.getElementById('content-30').classList.toggle('active');
             document.getElementById('item-30').classList.toggle('active');
+        }
+        if (num === '30b') {
+            document.getElementById('content-30b').classList.toggle('active');
+            document.getElementById('item-30b').classList.toggle('active');
         }
         if (num === 32) {
             document.getElementById('content-32').classList.toggle('active');
@@ -637,7 +681,6 @@
             const el = document.getElementById('item-47');
             el.scrollIntoView({ behavior: 'smooth' }, true);
         }
-
         if (selection === "Ajuna Kyaruzi") {
             const el = document.getElementById('item-48');
             el.scrollIntoView({ behavior: 'smooth' }, true);
@@ -1279,8 +1322,31 @@
                         <p class="description">This presentation is adapted from the attached internal blog post that was published in 2019 shortly after the AWS incident, summarizing our learnings. The presentation will include additional commentary on the nature of near misses.</p>
                     </div>
                 </div>
-    
+
                 <div id='item-22' class="agenda-item blue">
+                    <div class='flex'>
+                        <h4 class="item-title" onclick="toggleClass(22)"><span class="icon"></span>Book Signing: Alex Hidalgo, Author of "Implementing Service Level Objectives"</h4>
+                        <h4>3:00 PM-3:30 PM</h4>
+                    </div>
+                    <div class="flex">
+                        <p>Community Hub</p>
+                        <p>Alex Hidalgo</p>
+                    </div>
+                          
+                    <div class="content" id="content-22">
+                        <div class="wrap">
+                            <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/9e4c6ebefd2b4f0d876940322abeca59!_!4a838deb147b40a8b02adb50f5bd44bb.png?f=webp" alt="Guest Speaker" />
+                            <div class="text-wrap">
+                                <h5>Alex Hidalgo</h5>
+                                <p>Principal Reliability Advocate</p>
+                                <p>Nobl9</p>
+                            </div>
+                        </div>
+                        <p class="description">Join us for a special booksigning with Speaker and Author, Alex Hidalgo. Alex will be meeting with folks and passing out free signed copies of his O'Reilly book "Implementing Service Level Objectives: A Practical Guide to SLIs, SLOs, and  Error Budgets". Alex will be at the Nobl9 booth located in the Community Hub from 3:00pm on Wednesday, Feb. 15.</p>
+                    </div>
+                </div>
+    
+                <div id='item-22b' class="agenda-item blue">
                     <div class='flex'>
                         <h4>Afternoon Coffee Break</h4>
                         <h4>3:05 PM-3:30 PM</h4>
@@ -1369,7 +1435,7 @@
                         <p>Hopscotch</p>
                         <p>Kurt Andersen</p>
                     </div>
-                    <p>Hopscotch</p>
+                    
                     <div class="content" id="content-26">
                         <div class="wrap">
                             <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/717a6bd4b6634e4282ef45ba0b6d6687!_!987da7c1317aa2a42242c0419826de16.png?f=webp" alt="Guest Speaker" />
@@ -1448,7 +1514,7 @@
     
                 <div id='item-29' class="agenda-item purple">
                     <div class='flex'>
-                        <h4 class="item-title" onclick="toggleClass(29)"><span class="icon"></span>Closing Keynote: "Your Understanding Of Reality Is Wrong"</h4>
+                        <h4 class="item-title" onclick="toggleClass(29)"><span class="icon"></span>Closing Keynote: "Your Understanding of Reality is Wrong"</h4>
                         <h4>4:20 PM-4:50 PM</h4>
                     </div>
                     <div class="flex">
@@ -1469,14 +1535,50 @@
                         <p class="description">To get people in our organizations to look differently at how incidents happen and what insights we can glean from them ultimately means changing the way that our colleagues and leaders perceive reality. This talk will explore how we can make progress here.</p>
                     </div>
                 </div>
-    
-                <div id='item-30' class="agenda-item blue">
+
+                <div id='item-30' class="agenda-item purple">
                     <div class='flex'>
-                        <h4 class="item-title" onclick="toggleClass(30)"><span class="icon"></span>Evening Social</h4>
+                        <h4 class="item-title" onclick="toggleClass(30)"><span class="icon"></span>Closing Comments &amp; Housekeeping with Nora &amp; Laura</h4>
+                        <h4>4:50 PM-5:00 PM</h4>
+                    </div>
+                    <div class='flex'>
+                        <p>Marco Polo Ballroom</p>
+                        <div class="name-wrap">
+                            <p>Nora Jones</p>
+                            <p>Laura Nolan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content" id="content-30">
+                        <div class="images-wrap">
+                            <div class="wrap">
+                                <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/924051c27991473d878eb9cd59473cc6!_!6f9b51bc4cd59c5dac84b8a44c0ba342.png?f=webp" alt="Guest Speaker" />
+                                <div class="text-wrap">
+                                    <h5>Nora Jones</h5>
+                                    <p>Found/CEO</p>
+                                    <p>Jeli</p>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/01b49f224a914097b980d232198d5b3f!_!890fb54f00054bc5b33469a467b45f2b.png?f=webp" alt="Guest Speaker" />
+                                <div class="text-wrap">
+                                    <h5>Laura Nolan</h5>
+                                    <p>Principal Engineer</p>
+                                    <p>Stanza Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="description"></p>
+                    </div>
+                </div>
+    
+                <div id='item-30b' class="agenda-item blue">
+                    <div class='flex'>
+                        <h4 class="item-title" onclick="toggleClass('30b')"><span class="icon"></span>Evening Social</h4>
                         <h4>5:00 PM-6:00 PM</h4>
                     </div>
                     <p>Four Square Ballroom &amp; Patio</p>
-                    <div class="content" id="content-30">
+                    <div class="content" id="content-30b">
                         <p class="description">Join attendees for drinks & appetizers on the patio!</p>
                     </div>
                 </div>
@@ -2126,6 +2228,42 @@
                         <p class="description">It is clear that an absence (or decrease) of incidents is not evidence that learning is happening effectively. The presence (or increase) of incidents is not proof that learning from them is poor, either.</p>
                         <p class="description">So what does “good” look like? My colleagues and I have worked over the past five years with a wide range of organizations. Companies of all shapes and sizes — some public, some private. Some distributed all across the globe, some very centralized.</p>
                         <p class="description">In this talk we will describe results of a multi-year longitudinal study with an exemplar client of ours. We explored what signals, markers, and indicators that actual learning was taking place. Our findings were (and continue to be) remarkable. The work done by their relatively small — but incredibly skilled — group of incident analysts has created and sustained conditions that make it possible for people all across their organization to learn in meaningful ways.</p>
+                    </div>
+                </div>
+
+                <div id='item-56' class="agenda-item purple">
+                    <div class='flex'>
+                        <h4 class="item-title" onclick="toggleClass(56)"><span class="icon"></span>Closing Comments &amp; Housekeeping with Nora &amp; Laura</h4>
+                        <h4>4:50 PM-5:00 PM</h4>
+                    </div>
+                    <div class='flex'>
+                        <p>Marco Polo Ballroom</p>
+                        <div class="name-wrap">
+                            <p>Nora Jones</p>
+                            <p>Laura Nolan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content" id="content-56">
+                        <div class="images-wrap">
+                            <div class="wrap">
+                                <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/924051c27991473d878eb9cd59473cc6!_!6f9b51bc4cd59c5dac84b8a44c0ba342.png?f=webp" alt="Guest Speaker" />
+                                <div class="text-wrap">
+                                    <h5>Nora Jones</h5>
+                                    <p>Found/CEO</p>
+                                    <p>Jeli</p>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/01b49f224a914097b980d232198d5b3f!_!890fb54f00054bc5b33469a467b45f2b.png?f=webp" alt="Guest Speaker" />
+                                <div class="text-wrap">
+                                    <h5>Laura Nolan</h5>
+                                    <p>Principal Engineer</p>
+                                    <p>Stanza Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="description"></p>
                     </div>
                 </div>
             </div>
