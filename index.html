@@ -377,6 +377,10 @@
             document.getElementById('content-30b').classList.toggle('active');
             document.getElementById('item-30b').classList.toggle('active');
         }
+        if (num === '31b') {
+            document.getElementById('content-31b').classList.toggle('active');
+            document.getElementById('item-31b').classList.toggle('active');
+        }
         if (num === 32) {
             document.getElementById('content-32').classList.toggle('active');
             document.getElementById('item-32').classList.toggle('active');
@@ -601,6 +605,10 @@
         const selection = document.getElementById('select-2').value;
         console.log(selection);
 
+        if (selection === "Nora Jones") {
+            const el = document.getElementById('item-31b');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
         if (selection === "Laura Nolan") {
             const el = document.getElementById('item-32');
             el.scrollIntoView({ behavior: 'smooth' }, true);
@@ -643,10 +651,6 @@
         }
         if (selection === "Clint Byrum") {
             const el = document.getElementById('item-40');
-            el.scrollIntoView({ behavior: 'smooth' }, true);
-        }
-        if (selection === "Laura Nolan") {
-            const el = document.getElementById('item-41');
             el.scrollIntoView({ behavior: 'smooth' }, true);
         }
         if (selection === "Chad Todd") {
@@ -790,6 +794,7 @@
                         <option value="Nick Stenning">Nick Stenning</option>
                         <option value="Nick Travaglini">Nick Travaglini</option>
                         <option value="Niall Murphy">Niall Murphy</option>
+                        <option value="Nora Jones">Nora Jones</option>
                         <option value="Pirmin Schuermann">Pirmin Schuermann</option>
                         <option value="Ren Lee">Ren Lee</option>
                         <option value="Steve Mynett">Steve Mynett</option>
@@ -809,18 +814,53 @@
             </div>
 
             <div id="agenda-1-content" class="agenda-content">
-                <div id='item-1' class="agenda-item blue" >
+                <div id='item-1a' class="agenda-item blue" >
                     <div class='flex'>
                         <h4 class="item-title"></span>Networking &amp; Coffee</h4>
                         <h4>8:00 AM-8:50 AM</h4>
                     </div>
                     <p>Four Square Ballroom &amp; Patio</p>
                 </div>
+
+                <div id='item-1' class="agenda-item purple">
+                    <div class='flex'>
+                        <h4 class="item-title"  onclick="toggleClass(1)"><span class="icon"></span>Opening with Nora &amp; Laura</h4>
+                        <h4>9:00 AM-9:10 AM</h4>
+                    </div>
+                    <div class="flex">
+                        <p>Marco Polo Ballroom</p>
+                        <p>Nora Jones</p>
+                        <p>Laura Nolan</p>
+                    </div>
+                    
+                    <div class="content" id="content-1">
+                        <div class="images-wrap">
+                            <div class="wrap">
+                                <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/924051c27991473d878eb9cd59473cc6!_!6f9b51bc4cd59c5dac84b8a44c0ba342.png?f=webp" alt="Guest Speaker" />
+                                <div class="text-wrap">
+                                    <h5>Nora Jones</h5>
+                                    <p>Found/CEO</p>
+                                    <p>Jeli</p>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/01b49f224a914097b980d232198d5b3f!_!890fb54f00054bc5b33469a467b45f2b.png?f=webp" alt="Guest Speaker" />
+                                <div class="text-wrap">
+                                    <h5>Laura Nolan</h5>
+                                    <p>Principal Engineer</p>
+                                    <p>Stanza Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="description">Organizations looking to drive systemic change and improvement through their incident programs have a challenge ahead - how to see the interdependent and obscured aspects of their how their organization functions whilst in the midst of those very day-to-day operations. </p>
+                        <p class="description">In this talk, Laura will examine accessible systems thinking methods aimed at supporting rapid and continuous learning as well as practical methods for communicating about incidents to internal and external stakeholders.</p>
+                    </div>
+                </div>
     
                 <div id='item-2' class="agenda-item purple" >
                     <div class='flex'>
                         <h4 class="item-title" onclick="toggleClass(2)"><span class="icon"></span>Opening Keynote: Incident Management in 2023</h4>
-                        <h4>9:00 AM-9:35 AM</h4>
+                        <h4>9:10 AM-9:35 AM</h4>
                     </div>
                     <div class="flex">
                         <p>Marco Polo Ballroom</p>
@@ -1602,11 +1642,46 @@
                     </div>
                     <p>Four Square Ballroom &amp; Patio</p>
                 </div>
+
+                <div id='item-31b' class="agenda-item purple">
+                    <div class='flex'>
+                        <h4 class="item-title"  onclick="toggleClass('31b')"><span class="icon"></span>Opening with Nora &amp; Laura</h4>
+                        <h4>9:00 AM-9:10 AM</h4>
+                    </div>
+                    <div class="flex">
+                        <p>Marco Polo Ballroom</p>
+                        <p>Nora Jones</p>
+                        <p>Laura Nolan</p>
+                    </div>
+                    
+                    <div class="content" id="content-31b">
+                        <div class="images-wrap">
+                            <div class="wrap">
+                                <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/924051c27991473d878eb9cd59473cc6!_!6f9b51bc4cd59c5dac84b8a44c0ba342.png?f=webp" alt="Guest Speaker" />
+                                <div class="text-wrap">
+                                    <h5>Nora Jones</h5>
+                                    <p>Found/CEO</p>
+                                    <p>Jeli</p>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/01b49f224a914097b980d232198d5b3f!_!890fb54f00054bc5b33469a467b45f2b.png?f=webp" alt="Guest Speaker" />
+                                <div class="text-wrap">
+                                    <h5>Laura Nolan</h5>
+                                    <p>Principal Engineer</p>
+                                    <p>Stanza Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="description">Organizations looking to drive systemic change and improvement through their incident programs have a challenge ahead - how to see the interdependent and obscured aspects of their how their organization functions whilst in the midst of those very day-to-day operations. </p>
+                        <p class="description">In this talk, Laura will examine accessible systems thinking methods aimed at supporting rapid and continuous learning as well as practical methods for communicating about incidents to internal and external stakeholders.</p>
+                    </div>
+                </div>
     
                 <div id='item-32' class="agenda-item purple">
                     <div class='flex'>
                         <h4 class="item-title"  onclick="toggleClass(32)"><span class="icon"></span>Opening Keynote: Systems Thinking Methods For Incident Analysis</h4>
-                        <h4>9:00 AM-9:50 AM</h4>
+                        <h4>9:10 AM-9:50 AM</h4>
                     </div>
                     <div class="flex">
                         <p>Marco Polo Ballroom</p>
