@@ -101,16 +101,11 @@
         background: #FF6968;
     }
 
-    .agenda-item > p {
-        color: #fff;
+    .agenda-item > p, .agenda-item .flex p {
         font-size: 1.4rem;
         font-weight: 600;
-    }
-
-    .agenda-item.green > p {
-        color: #FF6968;
-        font-size: 1.4rem;
-        font-weight: 600;
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
     .flex {
@@ -179,6 +174,12 @@
         color: #FF6968;
     }
 
+    .h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
     .search-wrap {
         display: flex;
         align-items: center;
@@ -194,6 +195,7 @@
         font-style: normal;
         text-align: left;
         margin: 10px;
+        min-width: 240px;
     }
 
     .search-btn {
@@ -208,7 +210,7 @@
         transition: all ease-in-out .32s;
     }
 
-    #search-btn:hover {
+    .search-btn:hover {
         background: rgb(37, 54, 70);
         color: #F0F2F5;
         box-shadow: 0 5px 0 0 rgb(37, 54, 70);
@@ -425,14 +427,245 @@
         const selection = document.getElementById('select-1').value;
         console.log(selection);
         
-
+        if (selection === "Nora Jones") {
+            const el = document.getElementById('item-2');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Charity Majors") {
+            const el = document.getElementById('item-3');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Zoran Perkov") {
+            const el = document.getElementById('item-4');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Joseph Kondel") {
+            const el = document.getElementById('item-4');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Tim Nicholas") {
+            const el = document.getElementById('item-5');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Derek Remund") {
+            const el = document.getElementById('item-6');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Christine Jefferies") {
+            const el = document.getElementById('item-7');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "David Leigh") {
+            const el = document.getElementById('item-8');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Randy Horwitz") {
+            const el = document.getElementById('item-8');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Alex Wise") {
+            const el = document.getElementById('item-9');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Will Carhart") {
+            const el = document.getElementById('item-10');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Alex Hidalgo") {
+            const el = document.getElementById('item-11');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Juno Suárez") {
+            const el = document.getElementById('item-12');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Vishak Seshadri") {
+            const el = document.getElementById('item-13');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Chad Todd") {
+            const el = document.getElementById('item-14');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Paige Cruz") {
+            const el = document.getElementById('item-15');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "David Woods") {
+            const el = document.getElementById('item-17');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Steve McGhee") {
+            const el = document.getElementById('item-18');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Alex Elman") {
+            const el = document.getElementById('item-19');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Sarah Butt") {
+            const el = document.getElementById('item-19');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Balaji Narayanan") {
+            const el = document.getElementById('item-20');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Christina Yakomin") {
+            const el = document.getElementById('item-21');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Noah Sussman") {
+            const el = document.getElementById('item-23');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Thai Wood") {
+            const el = document.getElementById('item-24');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Jeff Martens") {
+            const el = document.getElementById('item-25');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Kurt Andersen") {
+            const el = document.getElementById('item-26');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Jessica Kerr") {
+            const el = document.getElementById('item-27');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Clint Byrum") {
+            const el = document.getElementById('item-28');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Eric Dobbs") {
+            const el = document.getElementById('item-28');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Lorin Hochstein") {
+            const el = document.getElementById('item-29');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
     }
 
     function scrollPage2() {
         const selection = document.getElementById('select-2').value;
         console.log(selection);
-        
 
+        if (selection === "Laura Nolan") {
+            const el = document.getElementById('item-32');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Bridget Lane") {
+            const el = document.getElementById('item-33');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Courtney Nash") {
+            const el = document.getElementById('item-34');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Nick Stenning") {
+            const el = document.getElementById('item-35');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Jessica DeVita") {
+            const el = document.getElementById('item-35');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Niall Murphy") {
+            const el = document.getElementById('item-35');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Cooper Benson") {
+            const el = document.getElementById('item-36');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Marisa Bigelow") {
+            const el = document.getElementById('item-37');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "David Leigh") {
+            const el = document.getElementById('item-38');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Brent Chapman") {
+            const el = document.getElementById('item-39');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Clint Byrum") {
+            const el = document.getElementById('item-40');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Laura Nolan") {
+            const el = document.getElementById('item-41');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Chad Todd") {
+            const el = document.getElementById('item-41');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Jacob Scott") {
+            const el = document.getElementById('item-41');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Vanessa Huerta Granda") {
+            const el = document.getElementById('item-41');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Alex Alzuri") {
+            const el = document.getElementById('item-41');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Crita Vesel") {
+            const el = document.getElementById('item-42');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Tanner Lund") {
+            const el = document.getElementById('item-43');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Jason Wieringa") {
+            const el = document.getElementById('item-44');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Kyle Lexmond") {
+            const el = document.getElementById('item-45');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Ivan Pupulidy") {
+            const el = document.getElementById('item-47');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+
+        if (selection === "Ajuna Kyaruzi") {
+            const el = document.getElementById('item-48');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Pirmin Schuermann") {
+            const el = document.getElementById('item-49');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Joshua Kaderlan") {
+            const el = document.getElementById('item-50');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Steve Mynett") {
+            const el = document.getElementById('item-52');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Ren Lee") {
+            const el = document.getElementById('item-53');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "Nick Travaglini") {
+            const el = document.getElementById('item-54');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
+        if (selection === "John Allspaw") {
+            const el = document.getElementById('item-55');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
     }
 </script>
 
@@ -443,37 +676,40 @@
 
         <section class="search-section">
             <div class="day-one-wrap">
-                <p>Day 1: February 15</p>
+                <p class="h3">Day 1: February 15</p>
                 <div class="search-wrap">
                     <select id="select-1">
                         <option disabled selected value>Please Select a Name</option>
-                        <option value="Nora Jones">Nora Jones</option>
-                        <option value="Zoran Perkov">Zoran Perkov</option>
-                        <option value="Tim Nicholas">Tim Nicholas</option>
-                        <option value="Derek Remund">Derek Remund</option>
-                        <option value="Christine Jefferies">Christine Jefferies</option>
-                        <option value="David Leigh">David Leigh</option>
-                        <option value="Randy Horwitz">Randy Horwitz</option>
-                        <option value="Alex Wise">Alex Wise</option>
-                        <option value="Will Carhart">Will Carhart</option>
-                        <option value="Alex Hidalgo">Alex Hidalgo</option>
-                        <option value="Juno Suárez">Juno Suárez</option>
-                        <option value="Vishak Seshadri">Vishak Seshadri</option>
-                        <option value="Chad Todd">Chad Todd</option>
-                        <option value="Paige Cruz">Paige Cruz</option>
-                        <option value="Steve McGhee">Steve McGhee</option>
                         <option value="Alex Elman">Alex Elman</option>
-                        <option value="Sarah Butt">Sarah Butt</option>
+                        <option value="Alex Hidalgo">Alex Hidalgo</option>
+                        <option value="Alex Wise">Alex Wise</option>
                         <option value="Balaji Narayanan">Balaji Narayanan</option>
+                        <option value="Chad Todd">Chad Todd</option>
+                        <option value="Charity Majors">Charity Majors</option>
                         <option value="Christina Yakomin">Christina Yakomin</option>
-                        <option value="Noah Sussman">Noah Sussman</option>
-                        <option value="Thai Wood">Thai Wood</option>
-                        <option value="Jeff Martens">Jeff Martens</option>
-                        <option value="Kurt Andersen">Kurt Andersen</option>
-                        <option value="Jessica Kerr">Jessica Kerr</option>
+                        <option value="Christine Jefferies">Christine Jefferies</option>
                         <option value="Clint Byrum">Clint Byrum</option>
+                        <option value="David Leigh">David Leigh</option>
+                        <option value="David Woods">David Woods</option>
+                        <option value="Derek Remund">Derek Remund</option>
                         <option value="Eric Dobbs">Eric Dobbs</option>
+                        <option value="Jeff Martens">Jeff Martens</option>
+                        <option value="Jessica Kerr">Jessica Kerr</option>
+                        <option value="Joseph Kondel">Joseph Kondel</option>
+                        <option value="Juno Suárez">Juno Suárez</option>
+                        <option value="Kurt Andersen">Kurt Andersen</option>
                         <option value="Lorin Hochstein">Lorin Hochstein</option>
+                        <option value="Noah Sussman">Noah Sussman</option>
+                        <option value="Nora Jones">Nora Jones</option>
+                        <option value="Paige Cruz">Paige Cruz</option>
+                        <option value="Randy Horwitz">Randy Horwitz</option>
+                        <option value="Sarah Butt">Sarah Butt</option>
+                        <option value="Steve McGhee">Steve McGhee</option>
+                        <option value="Thai Wood">Thai Wood</option>
+                        <option value="Tim Nicholas">Tim Nicholas</option>
+                        <option value="Vishak Seshadri">Vishak Seshadri</option>
+                        <option value="Will Carhart">Will Carhart</option>
+                        <option value="Zoran Perkov">Zoran Perkov</option>
                     </select>
             
                     <button class='search-btn' onclick="scrollPage1()">Search</button>
@@ -481,39 +717,41 @@
             </div>
 
             <div class="day-two-wrap">
-                <p>Day 2: February 16</p>
-                <select id="select-2">
-                    <option value="Laura Nolan">Laura Nolan</option>
-                    <option value="Bridget Lane">Bridget Lane</option>
-                    <option value="Courtney Nash">Courtney Nash</option>
-                    <option value="Nick Stenning">Nick Stenning</option>
-                    <option value="Jessica DeVita">Jessica DeVita</option>
-                    <option value="Niall Murphy">Niall Murphy</option>
-                    <option value="Cooper Benson">Cooper Benson</option>
-                    <option value="Marisa Bigelow">Marisa Bigelow</option>
-                    <option value="David Leigh">David Leigh</option>
-                    <option value="Brent Chapman">Brent Chapman</option>
-                    <option value="Clint Byrum">Clint Byrum</option>
-                    <option value="Laura Nolan">Laura Nolan</option>
-                    <option value="Chad Todd">Chad Todd</option>
-                    <option value="Jacob Scott">Jacob Scott</option>
-                    <option value="Vanessa Huerta Granda">Vanessa Huerta Granda</option>
-                    <option value="Alex Alzuri">Alex Alzuri</option>
-                    <option value="Crita Vesel">Crita Vesel</option>
-                    <option value="Tanner Lund">Tanner Lund</option>
-                    <option value="Jason Wieringa">Jason Wieringa</option>
-                    <option value="Kyle Lexmond">Kyle Lexmond</option>
-                    <option value="Ivan Pupulidy">Ivan Pupulidy</option>
-                    <option value="Ajuna Kyaruzi">Ajuna Kyaruzi</option>
-                    <option value="Pirmin Schuermann">Pirmin Schuermann</option>
-                    <option value="Joushua Kaderlan">Joushua Kaderlan</option>
-                    <option value="Steve Mynett">Steve Mynett</option>
-                    <option value="Ren Lee">Ren Lee</option>
-                    <option value="Nick Travaglini">Nick Travaglini</option>
-                    <option value="John Allspaw">John Allspaw</option>
-                </select>
-
-                <button class='search-btn' onclick="scrollPage2()">Search</button>
+                <p class="h3">Day 2: February 16</p>
+                <div class="search-wrap">
+                    <select id="select-2">
+                        <option disabled selected value>Please Select a Name</option>
+                        <option value="Ajuna Kyaruzi">Ajuna Kyaruzi</option>
+                        <option value="Alex Alzuri">Alex Alzuri</option>
+                        <option value="Brent Chapman">Brent Chapman</option>
+                        <option value="Bridget Lane">Bridget Lane</option>
+                        <option value="Chad Todd">Chad Todd</option>
+                        <option value="Clint Byrum">Clint Byrum</option>
+                        <option value="Cooper Benson">Cooper Benson</option>
+                        <option value="Courtney Nash">Courtney Nash</option>
+                        <option value="Crita Vesel">Crita Vesel</option>
+                        <option value="David Leigh">David Leigh</option>
+                        <option value="Ivan Pupulidy">Ivan Pupulidy</option>
+                        <option value="Jacob Scott">Jacob Scott</option>
+                        <option value="Jason Wieringa">Jason Wieringa</option>
+                        <option value="Joshua Kaderlan">Joshua Kaderlan</option>
+                        <option value="Jessica DeVita">Jessica DeVita</option>
+                        <option value="John Allspaw">John Allspaw</option>
+                        <option value="Kyle Lexmond">Kyle Lexmond</option>
+                        <option value="Laura Nolan">Laura Nolan</option>
+                        <option value="Marisa Bigelow">Marisa Bigelow</option>
+                        <option value="Nick Stenning">Nick Stenning</option>
+                        <option value="Nick Travaglini">Nick Travaglini</option>
+                        <option value="Niall Murphy">Niall Murphy</option>
+                        <option value="Pirmin Schuermann">Pirmin Schuermann</option>
+                        <option value="Ren Lee">Ren Lee</option>
+                        <option value="Steve Mynett">Steve Mynett</option>
+                        <option value="Tanner Lund">Tanner Lund</option>
+                        <option value="Vanessa Huerta Granda">Vanessa Huerta Granda</option>
+                    </select>
+    
+                    <button class='search-btn' onclick="scrollPage2()">Search</button>
+                </div>
             </div>
         </section>
         
@@ -752,7 +990,7 @@
     
                 <div id='item-10' class="agenda-item green">
                     <div class='flex'>
-                        <h4 class="item-title" onclick="toggleClass(10)"><span class="icon"></span>Captain Foresight: Using pre-mortems to prepare for incidents before they occur</h4>
+                        <h4 class="item-title" onclick="toggleClass(10)"><span class="icon"></span>Foresight is 20/20: Using Pre-Mortems to Prepare for Incidents Before They Occur</h4>
                         <h4>11:20 AM-11:45 AM</h4>
                     </div>
                     <div class="flex">
@@ -918,9 +1156,17 @@
                     </div>
                     <div class="flex">
                         <p>Marco Polo Ballroom</p>
+                        <p>David Woods</p>
                     </div>
                     
                     <div class="content" id="content-17">
+                        <div class="wrap">
+                            <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/579ed667ac4e4ba8ac17d231775978b7!_!cf7486492156e61703f28400657371ed.png?f=webp" alt="Guest Speaker" />
+                            <div class="text-wrap">
+                                <h5>Dr. David Woods</h5>
+                                <p>Ohio State University</p>
+                            </div>
+                        </div>
                         <p class="description">Incident response anywhere is like incident response everywhere. Well not exactly. Each world has unique attributes, tooling, and contexts, yet general patterns emerge from the diversity. Richard Cook and I first met 34 years ago discussing patterns in cognitive work revealed by an adverse event in the operating room. Richard saw the case as another example of my previous pattern finding results across other settings. This talk will use the history of our pattern discovery work together to highlight ‘patterns’ about finding patterns. </p>
                         <p class="description">Finding patterns across the diversity of tooling, technology, surprises, and performances drives the potential for learning and constructive action. When people show me their incidents & planned changes, I often comment, perhaps ominously: “It’s OK, we’ve seen this before.”</p>
                     </div>
@@ -945,7 +1191,7 @@
                                 <p>Google</p>
                             </div>
                         </div>
-                        <p class="description"></p>
+                        <p class="description">“Google Scale” you get a wide range of incidents. Steve will discuss how Google manages a variety of incidents and how Google works with its Cloud customers to learn from even more.</p>
                     </div>
                 </div>
     
@@ -1039,11 +1285,7 @@
                         <h4>Afternoon Coffee Break</h4>
                         <h4>3:05 PM-3:30 PM</h4>
                     </div>
-                    <div class="flex">
-                        <p>Four Square Ballroom &amp; Patio</p>
-                        <p>Mr. Noah Sussman</p>
-                    </div>
-                    
+                    <p>Four Square Ballroom &amp; Patio</p>                    
                 </div>
     
                 <div id='item-23' class="agenda-item green">
@@ -1051,12 +1293,16 @@
                         <h4 class="item-title" onclick="toggleClass(23)"><span class="icon"></span>Why You Need To Be Using a Chat Bot For Your Incident Response</h4>
                         <h4>3:30 PM-3:45 PM</h4>
                     </div>
-                    <p>Hopscotch</p>
+                    <div class="flex">
+                        <p>Hopscotch</p>
+                        <p>Noah Sussman</p>
+                    </div>
+
                     <div class="content" id="content-23">
                         <div class="wrap">
                             <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/9e4c6ebefd2b4f0d876940322abeca59!_!4a838deb147b40a8b02adb50f5bd44bb.png?f=webp" alt="Guest Speaker" />
                             <div class="text-wrap">
-                                <h5>Mr. Noah Sussman</h5>
+                                <h5>Noah Sussman</h5>
                                 <p>Staff Software Engineer</p>
                             </div>
                         </div>

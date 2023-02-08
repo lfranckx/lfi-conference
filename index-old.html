@@ -179,6 +179,12 @@
         color: #FF6968;
     }
 
+    .h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
     .search-wrap {
         display: flex;
         align-items: center;
@@ -194,6 +200,7 @@
         font-style: normal;
         text-align: left;
         margin: 10px;
+        min-width: 240px;
     }
 
     .search-btn {
@@ -208,7 +215,7 @@
         transition: all ease-in-out .32s;
     }
 
-    #search-btn:hover {
+    .search-btn:hover {
         background: rgb(37, 54, 70);
         color: #F0F2F5;
         box-shadow: 0 5px 0 0 rgb(37, 54, 70);
@@ -443,11 +450,12 @@
 
         <section class="search-section">
             <div class="day-one-wrap">
-                <p>Day 1: February 15</p>
+                <p class="h3">Day 1: February 15</p>
                 <div class="search-wrap">
                     <select id="select-1">
                         <option disabled selected value>Please Select a Name</option>
                         <option value="Nora Jones">Nora Jones</option>
+                        <option value="Charity Majors">Charity Majors</option>
                         <option value="Zoran Perkov">Zoran Perkov</option>
                         <option value="Tim Nicholas">Tim Nicholas</option>
                         <option value="Derek Remund">Derek Remund</option>
@@ -481,39 +489,42 @@
             </div>
 
             <div class="day-two-wrap">
-                <p>Day 2: February 16</p>
-                <select id="select-2">
-                    <option value="Laura Nolan">Laura Nolan</option>
-                    <option value="Bridget Lane">Bridget Lane</option>
-                    <option value="Courtney Nash">Courtney Nash</option>
-                    <option value="Nick Stenning">Nick Stenning</option>
-                    <option value="Jessica DeVita">Jessica DeVita</option>
-                    <option value="Niall Murphy">Niall Murphy</option>
-                    <option value="Cooper Benson">Cooper Benson</option>
-                    <option value="Marisa Bigelow">Marisa Bigelow</option>
-                    <option value="David Leigh">David Leigh</option>
-                    <option value="Brent Chapman">Brent Chapman</option>
-                    <option value="Clint Byrum">Clint Byrum</option>
-                    <option value="Laura Nolan">Laura Nolan</option>
-                    <option value="Chad Todd">Chad Todd</option>
-                    <option value="Jacob Scott">Jacob Scott</option>
-                    <option value="Vanessa Huerta Granda">Vanessa Huerta Granda</option>
-                    <option value="Alex Alzuri">Alex Alzuri</option>
-                    <option value="Crita Vesel">Crita Vesel</option>
-                    <option value="Tanner Lund">Tanner Lund</option>
-                    <option value="Jason Wieringa">Jason Wieringa</option>
-                    <option value="Kyle Lexmond">Kyle Lexmond</option>
-                    <option value="Ivan Pupulidy">Ivan Pupulidy</option>
-                    <option value="Ajuna Kyaruzi">Ajuna Kyaruzi</option>
-                    <option value="Pirmin Schuermann">Pirmin Schuermann</option>
-                    <option value="Joushua Kaderlan">Joushua Kaderlan</option>
-                    <option value="Steve Mynett">Steve Mynett</option>
-                    <option value="Ren Lee">Ren Lee</option>
-                    <option value="Nick Travaglini">Nick Travaglini</option>
-                    <option value="John Allspaw">John Allspaw</option>
-                </select>
-
-                <button class='search-btn' onclick="scrollPage2()">Search</button>
+                <p class="h3">Day 2: February 16</p>
+                <div class="search-wrap">
+                    <select id="select-2">
+                        <option disabled selected value>Please Select a Name</option>
+                        <option value="Laura Nolan">Laura Nolan</option>
+                        <option value="Bridget Lane">Bridget Lane</option>
+                        <option value="Courtney Nash">Courtney Nash</option>
+                        <option value="Nick Stenning">Nick Stenning</option>
+                        <option value="Jessica DeVita">Jessica DeVita</option>
+                        <option value="Niall Murphy">Niall Murphy</option>
+                        <option value="Cooper Benson">Cooper Benson</option>
+                        <option value="Marisa Bigelow">Marisa Bigelow</option>
+                        <option value="David Leigh">David Leigh</option>
+                        <option value="Brent Chapman">Brent Chapman</option>
+                        <option value="Clint Byrum">Clint Byrum</option>
+                        <option value="Laura Nolan">Laura Nolan</option>
+                        <option value="Chad Todd">Chad Todd</option>
+                        <option value="Jacob Scott">Jacob Scott</option>
+                        <option value="Vanessa Huerta Granda">Vanessa Huerta Granda</option>
+                        <option value="Alex Alzuri">Alex Alzuri</option>
+                        <option value="Crita Vesel">Crita Vesel</option>
+                        <option value="Tanner Lund">Tanner Lund</option>
+                        <option value="Jason Wieringa">Jason Wieringa</option>
+                        <option value="Kyle Lexmond">Kyle Lexmond</option>
+                        <option value="Ivan Pupulidy">Ivan Pupulidy</option>
+                        <option value="Ajuna Kyaruzi">Ajuna Kyaruzi</option>
+                        <option value="Pirmin Schuermann">Pirmin Schuermann</option>
+                        <option value="Joushua Kaderlan">Joushua Kaderlan</option>
+                        <option value="Steve Mynett">Steve Mynett</option>
+                        <option value="Ren Lee">Ren Lee</option>
+                        <option value="Nick Travaglini">Nick Travaglini</option>
+                        <option value="John Allspaw">John Allspaw</option>
+                    </select>
+    
+                    <button class='search-btn' onclick="scrollPage2()">Search</button>
+                </div>
             </div>
         </section>
         
