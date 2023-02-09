@@ -483,6 +483,10 @@
         const selection = document.getElementById('select-1').value;
         console.log(selection);
         
+        if (selection === "Laura Maguire") {
+            const el = document.getElementById('item-1');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
         if (selection === "Nora Jones") {
             const el = document.getElementById('item-2');
             el.scrollIntoView({ behavior: 'smooth' }, true);
@@ -609,6 +613,10 @@
         const selection = document.getElementById('select-2').value;
         console.log(selection);
 
+        if (selection === "Laura Maguire") {
+            const el = document.getElementById('item-31b');
+            el.scrollIntoView({ behavior: 'smooth' }, true);
+        }
         if (selection === "Nora Jones") {
             const el = document.getElementById('item-31b');
             el.scrollIntoView({ behavior: 'smooth' }, true);
@@ -1729,8 +1737,8 @@
                                 <p>Stripe</p>
                             </div>
                         </div>
-                        <p class="description">Institutional knowledge. Ever present and slow to share, we’ve all encountered at least one incident where someone deep in the company “just had to know” about a specific piece of a system to put out a fire. This is the worst place to be — siloed and reliant on heroism to resolve incidents — and yet, it seems we all find ourselves here inevitably. But what if we told you it didn’t have to be this way? That with the appropriate time and investment, you could level-up your engineers faster, break down your knowledge silos, and lower your cholesterol.</p>
-                        <p class="description">In this talk, we will share the things we’ve implemented on Stripe’s API Platform team to quickly get new folks ready for our on-call rotation. We will provide actionable examples, broken down into three types of changes we’ve made: documentation, process, and observability. We will discuss things like low-effort gamedays, utilizing incident reports for learning, and our approach to shadow on-call rotations.   A heart-healthy on-call rotation means reducing engineer burnout, increasing the ability to trust and rely on your coworkers, and quickly mitigating incidents in a blameless way. Join us for a deep-dive of Stripe’s approach to continuously improving on-call.</p>
+                        <p class="description">Institutional knowledge. Ever present and slow to share, we've all encountered at least one incident where someone deep in the company "just had to know" about a specific piece of a system to put out a fire. This is the worst place to be — siloed and reliant on heroism to resolve incidents — and yet, it seems we all find ourselves here inevitably. But what if we told you it didn't have to be this way? With the appropriate time and investment, you could level-up your engineers faster, break down your knowledge silos, and lower your cholesterol.</p>
+                        <p class="description">In this talk, we will share the things we've implemented on Stripe's API Platform team to make two pillars of our on-call experience as positive as possible: onboarding onto the rotation, and the engineering experience once on the rotation. We will discuss things like "energy efficient" gamedays, utilizing incident reports for learning, and our approach to shadow on-call rotations. A heart-healthy on-call means reducing engineer burnout, increasing the ability to trust and rely on your coworkers, and quickly mitigating incidents in a blameless way. Join us for a deep-dive into Stripe's approach to continuously improving on-call.</p>
                     </div>
                 </div>
                 
