@@ -531,10 +531,6 @@
             const el = document.getElementById('item-11');
             el.scrollIntoView({ behavior: 'smooth' }, true);
         }
-        if (selection === "Juno Suárez") {
-            const el = document.getElementById('item-12');
-            el.scrollIntoView({ behavior: 'smooth' }, true);
-        }
         if (selection === "Vishak Seshadri") {
             const el = document.getElementById('item-13');
             el.scrollIntoView({ behavior: 'smooth' }, true);
@@ -544,7 +540,7 @@
             el.scrollIntoView({ behavior: 'smooth' }, true);
         }
         if (selection === "Paige Cruz") {
-            const el = document.getElementById('item-15');
+            const el = document.getElementById('item-12');
             el.scrollIntoView({ behavior: 'smooth' }, true);
         }
         if (selection === "David Woods") {
@@ -759,7 +755,6 @@
                         <option value="Jeff Martens">Jeff Martens</option>
                         <option value="Jessica Kerr">Jessica Kerr</option>
                         <option value="Joseph Kondel">Joseph Kondel</option>
-                        <option value="Juno Suárez">Juno Suárez</option>
                         <option value="Kurt Andersen">Kurt Andersen</option>
                         <option value="Laura Maguire">Laura Maguire</option>
                         <option value="Lorin Hochstein">Lorin Hochstein</option>
@@ -1135,28 +1130,30 @@
                             These sorts of incidents can easily be relegated to "black swan" status, but this talk will challenge the audience to think about what their versions of these incidents might look like. Throughout, we will consider what we all could learn from these sorts of incidents instead of shrugging our shoulders and saying "This will probably never happen again."</p>
                     </div>
                 </div>
-    
+
                 <div id='item-12' class="agenda-item red">
                     <div class='flex'>
-                        <h4 class="item-title" onclick="toggleClass(12)"><span class="icon"></span>Incident Stories: What Didn't Make The Headlines</h4>
+                        <h4 class="item-title" onclick="toggleClass(12)"><span class="icon"></span>Incident Stories: There's No Place Like Production</h4>
                         <h4>11:20 AM-11:45 AM</h4>
                     </div>
                     <div class="flex">
                         <p>Red Rover</p>
-                        <p>Juno Suárez</p>
+                        <p>Paige Cruz</p>
                     </div>
                     
                     <div class="content" id="content-12">
                         <div class="wrap">
-                            <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/756a704696a64edf8cd87348b7b57220!_!6a2c322472a812b197913986e0f633f1.png?f=webp" alt="Guest Speaker" />
+                            <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/000191c2ebb04ed08ba3cc05225a3839!_!b2a5a30ebf6c07f3feeb2fd637acddc8.png?f=webp" alt="Guest Speaker" />
                             <div class="text-wrap">
-                                <h5>Juno Suárez</h5>
-                                <p>Tech Lead</p>
+                                <h5>Paige Cruz</h5>
+                                <p>Senior Developer Advocate</p>
+                                <p>Chronosphere</p>
                             </div>
                         </div>
-                        <p class="description">A heatwave took down this company's primary data centers for nearly a month. For the most part, the public didn't notice. </p>
-                        <p class="description">Internally, the response was hugely disruptive to daily operations and planned development activity.  In response, a company-wide production change freeze revealed untested procedures, hidden dependencies, and gaps in organization runbooks for downstream product development.</p>
-                        <p class="description">My vantage point was front-row as I responsible for the engineering velocity of 150 web software engineers.</p>
+                        <p class="description">As the change successfully deployed my confidence went up…until I got paged into an active SEV-1 incident. Mitigation was simple, a rollback quickly alleviated the issue but I was left with a pile of questions and an organization that wanted answers. </p>
+                        <p class="description">When “a big one” happens that affects multiple teams and customers you’ve got a captive audience and platform to talk about the people, processes, and technology involved in your organization.   That is exactly what I did.</p>
+                        <p class="description">Examining each step of the journey from PR to production deploy I uncovered the technical snafu that had occurred (surprise, surprise it relates to overwriting key blocks on nested YAML files). My curiosity pushed me further to study the life of a request from our CDN to a given Kubernetes Pod and I felt more comfortable debugging ingress and traffic issues afterwards.</p>
+                        <p class="description">Leaning into the spirit of learning from incidents I crafted a delightful post-incident review featuring descriptive charts with links to dashboards and a breakdown of the incident and key moments. After sharing that document far and wide I joined an internal group for our backend developers and broke down the life of a request and answered questions about our set-up.  In the end the most valuable investment I made was in sharing the failures and learnings across team and department boundaries, stoking the curiosity of our developers, making “the ops stuff” approachable and friendly and honestly not having shame about being “the human cause” of error.  By sharing this tale I hope that every attendee finds a takeaway or practice they can tuck in their pocket for the future.</p>
                     </div>
                 </div>
     
@@ -1210,32 +1207,6 @@
                         <p class="description">Examples of handover communications in software operations include verbal or digital written handover communications that occur during shift changes or on-call within a network operations center or customer support center. Handover communications can occur during high tempo and high-stake scenarios or low tempo and low-stake scenarios and having confidence in the information and it being understood is important. </p>
                         <p class="description">The complexity and uncertainty of information provided during the handover communication in software operations can affect an engineer’s confidence in understanding the current state of the system. </p>
                         <p class="description">Despite the importance of handover communications in software operations, the research into increased or decreased confidence of the engineer to understand the current state of the system after the information exchange is scarce.</p>
-                    </div>
-                </div>
-    
-                <div id='item-15' class="agenda-item red">
-                    <div class='flex'>
-                        <h4 class="item-title" onclick="toggleClass(15)"><span class="icon"></span>Incident Stories: There's No Place Like Production</h4>
-                        <h4>11:55 AM-12:10 PM</h4>
-                    </div>
-                    <div class="flex">
-                        <p>Red Rover</p>
-                        <p>Paige Cruz</p>
-                    </div>
-                    
-                    <div class="content" id="content-15">
-                        <div class="wrap">
-                            <img src="https://images.cvent.com/b7485c771ba34f2099df49df4f0b116e/files/event/e3af0a43b5c14a1bb6a2bbe285a4840e/000191c2ebb04ed08ba3cc05225a3839!_!b2a5a30ebf6c07f3feeb2fd637acddc8.png?f=webp" alt="Guest Speaker" />
-                            <div class="text-wrap">
-                                <h5>Paige Cruz</h5>
-                                <p>Senior Developer Advocate</p>
-                                <p>Chronosphere</p>
-                            </div>
-                        </div>
-                        <p class="description">As the change successfully deployed my confidence went up…until I got paged into an active SEV-1 incident. Mitigation was simple, a rollback quickly alleviated the issue but I was left with a pile of questions and an organization that wanted answers. </p>
-                        <p class="description">When “a big one” happens that affects multiple teams and customers you’ve got a captive audience and platform to talk about the people, processes, and technology involved in your organization.   That is exactly what I did.</p>
-                        <p class="description">Examining each step of the journey from PR to production deploy I uncovered the technical snafu that had occurred (surprise, surprise it relates to overwriting key blocks on nested YAML files). My curiosity pushed me further to study the life of a request from our CDN to a given Kubernetes Pod and I felt more comfortable debugging ingress and traffic issues afterwards.</p>
-                        <p class="description">Leaning into the spirit of learning from incidents I crafted a delightful post-incident review featuring descriptive charts with links to dashboards and a breakdown of the incident and key moments. After sharing that document far and wide I joined an internal group for our backend developers and broke down the life of a request and answered questions about our set-up.  In the end the most valuable investment I made was in sharing the failures and learnings across team and department boundaries, stoking the curiosity of our developers, making “the ops stuff” approachable and friendly and honestly not having shame about being “the human cause” of error.  By sharing this tale I hope that every attendee finds a takeaway or practice they can tuck in their pocket for the future.</p>
                     </div>
                 </div>
     
